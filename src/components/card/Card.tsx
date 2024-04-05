@@ -7,14 +7,14 @@ interface CardProp {
     name:string,
     slug:string,
     tea:Tea,
-    addFavs: (newFav: Tea) => void
+    handleFavs: (newFav: Tea) => void
 }
 
-function Card({img, name, slug, tea, addFavs}: CardProp) {
+function Card({img, name, slug, tea, handleFavs}: CardProp) {
     function favTea(e: React.MouseEvent<HTMLButtonElement>) {
         // console.log((e.target as HTMLButtonElement).getAttribute('id'))
         // console.log(tea)
-        addFavs(tea);
+        handleFavs(tea);
     }
 
 
