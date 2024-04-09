@@ -17,7 +17,8 @@ function Home() {
             <h2 className="home-h2">Let's 'spill the tea' on tea!</h2>
             <p className="info-desc">
               Did you know that all 'teas' originate from the leaves of the Camellia
-              Sinensis plant?(break this up) Any 'tea' that is not from this plant is actually an herbal blend! (break here) What makes each tea unique is
+              Sinensis plant?<br/><br/> Any 'tea' that is not from this plant is actually an herbal blend!<br/><br/>
+              What makes each tea unique is
               the creation process is goes through, including:
             </p>
             <ol>
@@ -30,7 +31,7 @@ function Home() {
         </article>
       </div>
       <article className="article-tea">
-        <img src={teas} />
+        <img src={teas} className='tea-image' />
         <div className="info">
           <h2>Black Tea</h2>
           <p>{allHardcodedTeas[3].summary}</p>
@@ -42,8 +43,8 @@ function Home() {
           </button>
         </div>
       </article>
-      <article className="article-tea">
-        <img src={teas} />
+      <article className="article-tea" >
+        <img src={teas} className='tea-image' />
         <div className="info">
           <h2>Oolong Tea</h2>
           <div className="info-desc">
@@ -58,7 +59,7 @@ function Home() {
         </div>
       </article>
       <article className="article-tea">
-        <img src={teas} />
+        <img src={teas} className='tea-image' />
         <div className="info">
           <h2>White Tea</h2>
           <div className="info-desc">
@@ -73,7 +74,7 @@ function Home() {
         </div>
       </article>
       <article className="article-tea">
-        <img src={teas} />
+        <img src={teas} className='tea-image' />
         <div className="info">
           <h2>Green Tea</h2>
           <div className="info-desc">
@@ -88,7 +89,7 @@ function Home() {
         </div>
       </article>
       <article className="article-tea">
-        <img src={teas} />
+        <img src={teas} className='tea-image' />
         <div className="info">
           <h2>Blends</h2>
           <div className="info-desc">

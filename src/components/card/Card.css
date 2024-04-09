@@ -15,7 +15,7 @@
 }
 
 h3 {
-  margin: 0;
+  margin: 5px;
 }
 
 .img-wrapper {
@@ -36,7 +36,8 @@ h3 {
 
 .tasting-notes {
   font-size: small;
-  text-align: left;
+  text-align: center;
   text-wrap: auto;
-  width: 50%;
+  width: 80%;
+  padding: 0 10% 0 10%;
 }

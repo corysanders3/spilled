@@ -10,14 +10,16 @@
     font-family: 'proxima-nova', sans-serif;
 }
 
-a {
+.navlink,
+.h1 {
     text-decoration: none;
     font-size: 1em;
     color: #010101;
     padding: 5px;
 }
 
-a:hover {
+.navlink:hover,
+.nav-favorites:hover {
     background-color: hsla(120, 7%, 92%, 0.461);
     border-radius: 15px;
     cursor: pointer;
@@ -28,10 +30,8 @@ a:hover {
 }
 
 .active {
-     background-color: hsla(120, 7%, 92%, 0.461);
-     /* background-color: #B1AE91; */
+    background-color: hsla(120, 7%, 92%, 0.461);
     border-radius: 15px;
-    /* color: #895B1E; */
     font-size: 1.5rem;
 }
 
@@ -39,7 +39,7 @@ h1 {
     margin: 0;
     font-size: 1.5em;
     font-family: "Macondo Swash Caps", cursive;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .div-nav-left {
@@ -56,4 +56,12 @@ h1 {
 .nav-favorites {
     height: 1.5em;
     width: 1.5em;
+}
+
+@media screen and (max-width: 536px) {
+    .div-nav-center {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+    }
 }

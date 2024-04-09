@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    padding: 0 2% 0 2%;
 }
 
 .infoButton {
     width: 250px;
     height: 40px;
-    font-size: 2vh;
+    font-size: 20px;
     background-color: white;
     border-radius: 5%;
 }
@@ -17,28 +18,43 @@
     display: flex;
     margin-top: 100px;
     background-color: hsla(120, 7%, 92%, 0.461);
-    min-height: 80vh;
+    min-height: 600px;
     align-items: center;
 }
 
 .article-intro {
     background-color: hsla(120, 7%, 92%, 0.461);
-    min-height: 80vh;
+    min-height: 600px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
 
 .info-desc {
-    padding: 80px;
+    margin-bottom: 6%;
 }
 
 img {
-    height: 80vh;
+    height: 600px;
     width: auto;
 }
 
 h2 {
     font-size: 3em;
     font-weight: 300;
+}
+
+@media screen and (max-width: 767px) {
+    .article-intro {
+        flex-direction: column-reverse;
+    }
+    
+    .tea-image {
+        display: none;
+    }
+
+    .article-tea {
+        min-height: 400px;
+        margin-top: 50px;
+    }
 }
